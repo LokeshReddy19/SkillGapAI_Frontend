@@ -1,38 +1,132 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0F172A, #020617);
+  color: #E5E7EB;
+  font-family: 'Inter', sans-serif;
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+h1 {
+  font-family: 'Poppins';
   text-align: center;
+  font-size: 56px;
+  letter-spacing: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subtitle {
+  text-align: center;
+  color: #94A3B8;
+  font-size: 20px;
+  margin-bottom: 45px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CARD */
+.card {
+  background: #1E293B;
+  padding: 40px;
+  border-radius: 18px;
+  margin-top: 35px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  border: none;
+  font-size: 17px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(90deg, #4F46E5, #6366F1);
+  border: none;
+  border-radius: 14px;
   color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  opacity: 0.9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* RESULT */
+.result-card {
+  margin-top: 50px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* SCORE */
+.score-box {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.score-label {
+  display: block;
+  font-size: 18px;
+  color: #94A3B8;
+}
+
+.score {
+  font-size: 70px;
+  font-weight: bold;
+  color: #22C55E;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* INFO BOX */
+.info-box {
+  background: #0F172A;
+  padding: 28px;
+  border-radius: 14px;
+  margin-top: 30px;
+}
+
+.info-box h3 {
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+
+.info-box ul,
+.info-box ol {
+  padding-left: 22px;
+}
+
+.info-box li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* DANGER */
+.danger {
+  border-left: 6px solid #EF4444;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
