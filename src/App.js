@@ -12,8 +12,8 @@ import {
 } from "recharts";
 import "./App.css";
 
-/* ✅ LOCAL BACKEND */
-const API = "http://127.0.0.1:8000";
+/* ✅ Render BACKEND */
+const API = "https://skillgapai-backend-2.onrender.com";
 
 function App() {
   const [role, setRole] = useState("");
